@@ -5,6 +5,7 @@ const gallery = document.querySelector('.gallery');
 let lightbox;
 
 
+
 export function renderImages(images) {
   const markup = images
     .map(
