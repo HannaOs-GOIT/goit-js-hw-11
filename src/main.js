@@ -15,7 +15,8 @@ form.addEventListener('submit', handleSubmit);
 async function handleSubmit(event) {
   event.preventDefault();
 
-  const query = event.target.elements.query.value.trim();
+const query = event.target.elements.searchQuery.value.trim();
+    
 
   if (!query) {
     iziToast.error({
