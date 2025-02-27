@@ -20,6 +20,3 @@ export async function fetchImages(query) {
     throw error;
   }
 }
-
-
-

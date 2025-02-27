@@ -18,11 +18,10 @@ export function renderImages(images) {
         downloads,
       }) => `
             <li class="gallery-item">
-                <div class="gallery">
-                    <a href="${largeImageURL}">
-                        <img class="gallery-image" src="${webformatURL}" alt="${tags}" loading="lazy">
+                    <a href="${largeImageURL}" class="gallery">
+                    <img class="gallery-image" src="${webformatURL}" alt="${tags}">
                     </a>
-                </div>
+                
 
                 <div class="info">
                     <p><b>Likes:</b> ${likes}</p>
@@ -50,4 +49,3 @@ export function clearGallery() {
     lightbox = null;
   }
 }
-
